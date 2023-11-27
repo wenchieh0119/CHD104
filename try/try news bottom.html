@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .news_bottom {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .news_bottom .item {
+            float: left;
+            position: relative;
+        }
+
+        .news_bottom .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .news_bottom .item:first-child {
+            width: 50%;
+        }
+
+        .news_bottom .item:first-child~.item {
+            width: 25%;
+        }
+
+        .news_bottom .item .txt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            background: rgba(0, 0, 0, 0);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .news_bottom .item:hover .txt {
+            display: flex;
+        }
+
+        .news_bottom .item h3 {
+            margin-bottom: 0.4em;
+        }
+
+        .news_bottom .item p {
+            font-weight: 100;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="news_bottom">
+        <div class="news_bottom_left">
+            <div class="item">
+                <img src="./news_img/img4-1.png" width="200" height="200">
+
+                <div class="txt">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./news_img/img4-2.png" width="200" height="200">
+
+                <div class="txt">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./news_img/img4-3.png" width="200" height="200">
+
+                <div class="txt">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./news_img/img4-4.png" width="200" height="200">
+
+                <div class="txt">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./news_img/img4-5.png" width="200" height="200">
+
+                <div class="txt">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+
+
+            <div class="news_bottom">
+                <div class="item">
+                    <img src="./news_img/img4-1.png" width="200" height="200">
+
+                    <div class="txt">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./news_img/img4-2.png" width="200" height="200">
+
+                    <div class="txt">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./news_img/img4-3.png" width="200" height="200">
+
+                    <div class="txt">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./news_img/img4-4.png" width="200" height="200">
+
+                    <div class="txt">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./news_img/img4-5.png" width="200" height="200">
+
+                    <div class="txt">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+
+            </div>
+</body>
+
+</html>

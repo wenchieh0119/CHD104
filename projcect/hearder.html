@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-header {
+            background-color: #ffbe00;
+
+            /*background-image: linear-gradient(to bottom, transparent 0%, #fff7 100%);*/
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-header .logo {
+            vertical-align: top;
+            display: flex;
+            margin: 40px;
+            align-items: center;
+        }
+
+        .main-header .navSearch {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .main-header .navSearch input,
+        button {
+            border: none;
+            outline: none;
+            height: 50px;
+            background-color: #ffffff;
+        }
+
+        .main-header .navSearch input {
+            padding-left: 20px;
+            width: 80%;
+            border-radius: 100px 0 0 100px;
+        }
+
+        .main-header .navSearch button {
+            width: 20%;
+            border-radius: 0 100px 100px 0;
+            cursor: pointer;
+        }
+
+        .main-header .menu {
+            margin: 40px;
+        }
+
+        .main-header .menu ul {
+            padding: 2px;
+        }
+
+        .main-header .menu ul li {
+            list-style-type: none;
+            display: inline;
+            margin: 0 10px;
+            font-size: 24px;
+            letter-spacing: 1.5px;
+            font-family: fantasy;
+            font-weight: lighter;
+        }
+
+        .main-header .menu ul li a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .main-header .menu ul li a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .main-header .middle {
+            /*隱藏次選單*/
+            display: none;
+        }
+
+        .main-header .middle li :hover>ul {
+            /* 滑鼠滑入展開次選單*/
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="front_page.html" class="logo"> <img src="./img/front/LOGO.png" height="70px" width="160px"
+                    alt="網站名稱"></a>
+
+            <div class="navSearch">
+                <input type="search" placeholder="想去哪裡呢?...." />
+                <button><img src="./img/front/search.png" alt="" height="30px" width="30px"></i></button>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="news.html">旅遊情報</a></li>
+                    <li><a href="explore_itinerary.html">探索行程</a></li>
+                    <li> <a href="activity.html">熱門活動</a>
+                        <ul class="middle">
+                            <li><a href="activity.html">美食品嘗</a></li>
+                            <li><a href="attractions.html">探索景點</a></li>
+                            <li><a href="park.html">主題樂園</a></li>
+                            <li><a href="art.html">文藝主題</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="trip_planning.html">行程規劃</a></li>
+                    <li><a href="member_center.html">會員中心</a></li>
+                </ul>
+            </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+
+  background:linear-gradient(0deg,rgba(26,34,24,.65),rgba(26,34,24,.65)); //背景色

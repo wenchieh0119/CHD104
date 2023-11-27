@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 2rem;
+        }
+
+        .card {
+            width: 301px;
+            height: 286px;
+            margin: auto;
+            border: 1px solid #000;
+            position: relative;
+            perspective: 150rem;
+        }
+
+        .font,
+        .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            font-size: 16px;
+            color: #fff;
+
+            box-sizing: border-box;
+            transition: all 0.5s;
+            backface-visibility: hidden;
+
+
+        }
+
+        .font p {
+            font-size: 20px;
+            position: absolute;
+            padding-top: 220px;
+            color: black;
+            padding-left: 40px;
+
+        }
+
+        .font img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .back {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 10px;
+            align-items: center;
+            color: black;
+            transform: rotateY(-180deg);
+
+
+        }
+
+        .card:hover .font {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .back {
+            transform: rotateY(0);
+            background-color: rgba(193, 193, 193, 0.81);
+        }
+
+
+        .btn {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            color: #000;
+            background-color: #ffd28d;
+            opacity: 0.8;
+            border-radius: 30px;
+            transition: 0.6s ease-in;
+        }
+
+        .btn:hover {
+            opacity: 1;
+            font-size: 20px;
+            cursor: pointer;
+            color: #fff;
+            width: 120px;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        a {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class='card'>
+            <div class='font'>
+                <img src="./explore_img/img1.svg" alt="">
+                <p> 山海美景：台灣自然之旅</p>
+            </div>
+            <div class='back'>
+                九份擁有令人屏息的山海景觀。夜幕降臨時，九份山城點亮了燈光，彷若夢幻般的仙境。另外，來到九份不能錯過的是嘗試當地的美食。芋圓冰、貢丸湯、花生冰淇淋卷等各種特色小吃，都充滿了曼哈頓的當地風味。在這裡，迭代美食也成為一次尋味之旅。
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class='btn'><a>transition</a></div>
+    </body>
+
+</html>
