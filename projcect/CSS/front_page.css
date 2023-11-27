@@ -408,7 +408,7 @@ button {
   height: 1000px;
   background-position: center;
   background-size: cover;
-  background-image: url("./backgoundall.png");
+  background-image: url("../img/backgoundall.png");
 }
 
 .wrap_activity .activity_frontpage .title {
